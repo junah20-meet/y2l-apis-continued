@@ -7,6 +7,11 @@
             <input type="submit">
         </form>
 
-        {{results}}
+        {% for result in results %}
+        {{result['name']}}
+        :
+        {{result["value"]}}
+        <br>
+        {%endfor%}
     </body>
 </html>
